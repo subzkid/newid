@@ -1,0 +1,902 @@
+*:focus {
+   outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+      min-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'open sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+#hoofdWrapper {
+    overflow-x:hidden;
+}
+
+.container-fluid {
+    padding: 0;
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 6em;
+    margin-bottom: 40px;
+}
+
+.h_whatwedo {
+    color: lightgrey;
+}
+
+.h_meettheteam {
+    color: #333;;
+}
+
+.portret {
+    width: 100%;
+  max-width: 900px;
+}
+
+
+@media screen and (min-width: 768px){
+  .h_top {
+    margin-top: 12%;
+}
+}
+
+
+h2 {
+    font-size: 14px;
+    color: #4d4d4d;
+    font-weight: 700;
+  margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.p_whatwedo {
+    width: 75%;
+}
+
+.p_gespecialiseerd {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.p_gespecialiseerd2 {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+
+/* nav */
+
+.navigation {
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+  outline: none;
+}
+
+.nav>li>a:focus {
+
+      color: black;
+}
+
+
+.a_nav {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.a_nav:hover {
+    color: deeppink;
+}
+
+.logo_nav {
+    width: 85px;
+    margin-top: -1px;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+}
+
+.icon-bar {
+    background-color: #424242;
+}
+
+/* Wrappers */
+
+
+.pattern {
+  position: absolute;
+  z-index: -1000;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 60%;
+  min-width: 500px;
+  max-width: 1200px;
+  opacity: 0.03;
+}
+
+.weAreNewId {
+  font-size: 150px;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 150px;
+
+  margin-top: 200px;
+  color: #ea4c7a;
+    background: -webkit-linear-gradient(left, #f0545e, #ea4c7a);
+    background: linear-gradient(left, #f0545e, #ea4c7a);
+    background: -moz-linear-gradient(left, #ea4c7a, #ea4c7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: #f0545e;
+    
+}
+
+#wrapper_home {
+    height: 100vh;
+  width: 100%;
+  margin: auto
+}
+
+
+/* Wrapper Home */
+
+.logo_home {
+    margin-top: 22vh;
+    height: 15%;
+}
+
+/* Wrapper Whatwedo */
+
+.circle_whatwedo {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 15px 17px;
+    border-radius: 50px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.4);
+}
+
+.whatwedo {
+    width: 100%;
+    height: 125px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.whatWeDoIcons {
+  text-align: center;
+  line-height: 19px;
+  margin-left: -1.5px;
+  font-size: 19px;
+  color: #f0545e;
+  background: -webkit-linear-gradient(left, #f0545e, #ea4c7a);
+  background: linear-gradient(left, #f0545e, #ea4c7a);
+  background: -moz-linear-gradient(left, transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Meet the team */
+
+.meet_top {
+    margin-top: 200px;
+}
+
+.meettheteam {
+    background-color: transparent;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.meettheteam2 {
+    background-color: transparent;
+    width: 100%;
+    margin-right: 50px;
+    text-align: right;
+}
+
+.line {
+    background: #f0545e;
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%,#ea4c7a 100%); 
+    background: linear-gradient(135deg, #f0545e 6%,#ea4c7a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a',GradientType=1 );
+    width: 180px;
+    height: 5px;
+    -webkit-box-shadow: 9px 34px 140px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 34px 140px -21px rgba(0,0,0,0.75);
+    box-shadow: 9px 34px 140px -21px rgba(0,0,0,0.75);
+}
+
+.line_right {
+    position: absolute;
+    right: 10px;
+  
+}
+
+.visible_meet {
+    display: none;
+}
+
+/* Buttons */
+
+.button_home {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: auto;
+  left:0;
+  right:0;
+    text-align: center;
+    padding: 12px 0px;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 5px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: #f0545e;
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%,#ea4c7a 100%); 
+    background: linear-gradient(135deg, #f0545e 6%,#ea4c7a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a',GradientType=1 );
+}
+
+.button_home:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #f0545e;
+    -moz-box-shadow: inset 0px 0px 0px 2x #f0545e;
+    box-shadow: inset 0px 0px 0px 2px #f0545e;
+    background: transparent;
+    color: #f0545e;
+    cursor: pointer;
+}
+
+/* EIND CSS TWAN */
+
+/* BEGIN CSS GUIDO */
+
+.workBg {
+    width: 100%;
+    height: 800px;
+}
+
+.werkTextBox {
+    border: 1px solid #e5e5e5;
+    width: 110%;
+    height: 235px;
+    padding: 50px;
+    padding-right: 10px;
+  
+}
+
+.workTitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15%;
+    color: #595959;
+}
+
+.centerThumbnail {
+    position: relative;
+    width: 100%;
+    height: 235px;
+}
+
+.workBroodText {
+    font-weight: 300;
+    color:#999999;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.goToWork {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    border-radius: 20px;
+    color: #f0545e;
+    border: 1px solid #ea4c7a;
+    cursor: pointer;
+    float: right;
+}
+
+.goToWork:hover {
+    color: white;
+    background: #f0545e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f0545e 6%, #ea4c7a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.werkThumbnail {
+    width: 345px;
+    z-index: 2;
+    display: block;
+    margin: auto;
+    margin-left: 45px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.4);
+}
+
+.workMakerEnCategorie {
+    text-transform: uppercase;
+    color: #a6a6a6;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-left: 15%;
+}
+
+.border {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0545e+0,ea4c7a+100 */
+    background: #f0545e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f0545e 6%, #ea4c7a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    height: 5px;
+    width: 50%;
+    margin-left: 15%;
+}
+
+.paddingBij {
+    margin-top: 100px;
+    margin-left: -1.2vw;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.noMarginTop {
+    margin-top: 50px;
+}
+
+
+
+.paddingBij:last-child {
+    margin-bottom: 100px;
+}
+
+.formBgSchuin {
+    background-color: #fafafa;
+    height: 100px;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 50px, 100% 0);
+    transform: rotate(180deg);
+}
+
+.geenRotatie {
+      transform: rotate(0deg);
+}
+    
+.formBg {
+    background-color: #fafafa;
+    height: 840px;
+    width: 100%;
+}
+
+#name,
+#email,
+#motivation,
+#anderNamelijkInput {
+    width: 100%;
+    color: #a5a5a5;
+    border: 1px solid #f2f2f2;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+#anderNamelijkInput {
+    padding: 5px 20px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+#motivation {
+    max-width: 100%;
+    min-width: 100%;
+    height: 320px;
+    max-height: 375px;
+    min-height: 200px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #a5a5a5;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #a5a5a5;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #a5a5a5;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a5a5a5;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a5a5a5;
+}
+
+.checkboxInternship {
+    font-size: 12px;
+    font-weight: 300;
+    color: #404040;
+}
+
+input[type=submit] {
+    border: none;
+    text-transform: lowercase;
+    font-size: 14px;
+    font-weight: 400;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+    border-radius: 30px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0545e+0,ea4c7a+100 */
+    background: #f0545e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f0545e 6%, #ea4c7a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    margin-top: 45px;
+}
+
+input[type=submit]:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #f0545e;
+    -moz-box-shadow: inset 0px 0px 0px 2x #f0545e;
+    box-shadow: inset 0px 0px 0px 2px #f0545e;
+    background: transparent;
+    color: #f0545e;
+    cursor: pointer;
+}
+
+.titleCheckbox {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #343434;
+    font-weight: 400;
+}
+
+#alleCheckboxen {
+    margin-left: 3px;
+}
+
+/* footer */
+
+
+/* contact */
+
+.contactbg {
+    width: 100%;
+    height: 350px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0545e+0,ea4c7a+100 */
+    background: #f0545e;
+    /* Old browsers */
+    background: -moz-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-50deg, #f0545e 6%, #ea4c7a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f0545e 6%, #ea4c7a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0545e', endColorstr='#ea4c7a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: white;
+}
+
+.backgroundTitle {
+    opacity: 0.1;
+    font-size: 90px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.bebas {
+    font-family: 'Oswald', 'bebas neue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.endText {
+    font-size: 33px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 75px;
+    margin-bottom: 0px;
+    line-height: 95%;
+}
+
+.contactus {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contactButton {
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    padding: 12px 0px;
+    color: white;
+    margin-left: 15px;
+    border-radius: 50px;
+    margin-top: 35px;
+}
+
+.contactButton:hover,
+.contactButton:active,
+.contactButton:focus {
+    background: white;
+    color: #f0545e;
+    text-decoration: none;
+}
+
+.contactButton a {
+    margin-top: 20px;
+}
+
+#wrapper_meettheteam {
+  background-color: #fafafa
+}
+
+.backToTop {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    bottom: 20px;
+    right: 32px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.backToTop:hover {
+    color: #ea4c7a;
+    background-color: white;
+}
+
+.disclaimer,
+.disclaimer a {
+    font-size: 11px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    color: #a6a6a6;
+}
+
+.disclaimer a {
+    text-decoration: underline;
+}
+
+.intershipDisclaimer {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.line-right {
+  position: absolute;
+  right: 10px;
+}
+/* MEDIA QUERY TWAN & GUIDO */
+  .marginTop {
+    margin-top: 80px;
+  }
+
+.marginBottom {
+  margin-bottom: 100px;
+}
+
+.p_gespecialiseerd {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .pattern {
+  width: 100%;
+  min-width: 0px;
+}
+    .nav>li {
+    text-align: center;
+}
+ .test {
+  float: left;
+   text-align: left;
+} 
+  .line-right {
+position: relative;
+  right: 0px;
+}
+  .p_gespecialiseerd2 {
+    margin-top: 10px;
+}
+  
+  .weAreNewId {
+  font-size: 75px;
+  line-height: 70px;
+  margin-top: 170px;
+}
+  #wrapper_home {
+    height: 90vh;
+}
+  
+  .floatRight {
+    margin-bottom: 90px;
+  }
+
+}
+
+.ganaarportfolio {
+  color: #ea4c7a;
+}
+
+.ganaarportfolio:hover, .ganaarportfolio:active, .ganaarportfolio:focus {
+  color: #ea4c7a;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    
+  .meerPaddingfoo {
+    padding: 0px 60px;
+}
+    .circle_whatwedo {
+    float: right;
+  }
+    .floatRight {
+    float: right;
+      margin-right: -15px;
+  }
+  
+.wiewijzijn {
+  margin-left: 1vw;  
+}
+}
+
+@media screen and (max-width: 768px) {
+  .wiewijzijn {
+  margin-left: -5px;  
+}
+    
+    .a_nav {
+        margin-left: 0px;
+    }
+
+    .logo_home {
+        margin-top: 35vh;
+    }
+    
+    .p_whatwedo {
+        width: 100%;
+    }
+    
+    .contactButton {
+        margin-left: 0px;
+    }
+    
+    .contactbg {
+        height: 500px;
+    }
+    
+    .formBg {
+        height: 1320px;
+    }
+    
+    .formBgSchuin {
+        clip-path: polygon(0 0, 100% 0, 100% 75px, 0 100%);
+      margin-top: 50px;
+    }
+    
+  .intershipDisclaimer {
+    padding: 0px 15px;
+  }
+  .geenRotatie {
+      margin-top: 0px;
+}
+    .intershipDisclaimer {
+        
+        margin-bottom: 0px;
+    }
+    
+    input[type=submit] {
+        margin-bottom: 45px;
+    }
+    
+    #motivation {
+        max-width: 100%;
+        height: 300px;
+        max-height: 300px;
+    }
+    
+}
+
+
+.meerHeightSchuin {
+    background-color: #fafafa;
+    height: 200px;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 145px, 100% 0);
+}
+
+@media only screen and (max-width : 991px) {
+  
+   
+    
+    .paddingBij {
+        margin-left: 0vw;
+    }
+  
+    .werkTextBox {
+        width: 100%;
+        padding: 35px;
+        height: 275px;
+        padding-top: 75px;
+    }
+    
+    .border, .workTitle, .workBroodText, .workMakerEnCategorie {
+        margin-left: 0px;
+    }
+    
+    .werkThumbnail {
+        width: 65%;
+        margin-left: 0px;
+    }
+    
+    .centerThumbnail {
+        height: 120px;
+        margin-top: 60px;
+    }
+    
+    .border {
+        width: 90%;
+    }
+  .backgroundTitle {
+
+      line-height: 90px;
+}
+}
+
+@media only screen and (max-width : 494px) {
+    
+    .werkThumbnail {
+        width: 85%;
+        margin-left: 0px;
+    }
+    .centerThumbnail {
+        height: 80px;
+        margin-top: 60px;
+    }
+}
+     
+@media screen and (min-width:3800px) {
+    
+    .formBg {
+        height: 900px
+    }
+}
+
+.bigger {
+  font-size: 150px;
+  line-height: 145px;
+  margin-top: 15%;
+/*  opacity: 0.075*/
+}
+
+.socialIcons {
+  float: left;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  border: 1px solid #f0545e;
+  background-color: transparent;
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.insta {
+    padding: 10px 10px;
+}
+
+.stageText {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
